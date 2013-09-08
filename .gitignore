@@ -15,3 +15,5 @@
 # Visual Studio
 *.sdf
 *.opensdf
+*.suo
+*.v11suo
