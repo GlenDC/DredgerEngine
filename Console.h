@@ -7,21 +7,12 @@
 #include <cstdlib> //rand()
 #include <sys/stat.h> //file info
 #include <atlbase.h> //CComPtr
-//-----------------------------------------------------
-// Console Class									
-//-----------------------------------------------------
-class Console
-{
-public:
-	Console();				// Constructor
-	virtual ~Console();		// Destructor
 
-	//-------------------------------------------------
-	// Own methods								
-	//-------------------------------------------------
+namespace WindowsConsole
+{
+	static const WORD MAX_CONSOLE_LINES = 500;
 
 	void RedirectIOToConsole()
-
 	{
 		int hConHandle;
 		long lStdHandle;
@@ -69,21 +60,6 @@ public:
 		// point to console as well
 
 		ios::sync_with_stdio();
-
 	}
-
-private: 
-	//-------------------------------------------------
-	// Datamembers								
-	//-------------------------------------------------
-	static const WORD MAX_CONSOLE_LINES = 500;
-
-	// -------------------------
-	// Disabling default copy constructor and default 
-	// assignment operator.
-	// -------------------------
-	Console(const Console& yRef);									
-	Console& operator=(const Console& yRef);	
-};
-
+ }
  
