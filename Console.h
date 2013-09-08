@@ -7,6 +7,10 @@
 #include <cstdlib> //rand()
 #include <sys/stat.h> //file info
 #include <atlbase.h> //CComPtr
+#include <iostream>
+#include <iosfwd>
+#include <io.h>
+#include <fcntl.h>
 
 namespace WindowsConsole
 {
@@ -59,7 +63,7 @@ namespace WindowsConsole
 
 		// point to console as well
 
-		ios::sync_with_stdio();
+		std::ios::sync_with_stdio();
 	}
  }
  

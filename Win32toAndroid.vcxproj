@@ -84,6 +84,7 @@
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Console.h" />
     <ClInclude Include="jni\Engine.h" />
     <ClInclude Include="Win32toAndroid.h" />
     <ClInclude Include="Window.h" />

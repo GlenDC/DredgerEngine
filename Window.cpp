@@ -2,6 +2,7 @@
 #include <Engine.h>
 #include <string>
 #include <OpenGL.h>
+#include "Console.h"
 #pragma comment(lib, "opengl32.lib")
 
 HWND Window::handle;
@@ -10,6 +11,10 @@ HDC Window::hdc;
 
 Window::Window(HINSTANCE instance,const char* windowName,int width,int height)
 {
+#ifdef DEBUG
+	WindowsConsole::RedirectIOToConsole();
+#endif
+
 	WNDCLASSEX wndClass;
 	wndClass.cbSize = sizeof(WNDCLASSEX);
 	wndClass.style = CS_HREDRAW | CS_VREDRAW;
@@ -91,6 +96,7 @@ Window::Window(HINSTANCE instance,const char* windowName,int width,int height)
 
 	MSG msg ={};
 	Engine* engine = new Engine();
+
 	// Main message loop:
 	while(msg.message != WM_QUIT)
 	{
