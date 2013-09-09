@@ -2,6 +2,9 @@
 #ifndef ENGINE
 #define ENGINE
 #include <Win32toAndroid.h>
+#include "code/graphics/SceneManager.h"
+
+
 class Engine
 {
 	public:
@@ -9,9 +12,11 @@ class Engine
 		~Engine();
 
 		void Draw();
-		void Update();
+		void Update(float deltaTime);
 
 	private:
 		float number;
+		SceneManager* m_pSceneManager;
+
 };
 #endif

@@ -3,6 +3,7 @@
 Engine::Engine()
 {
 	number = 0.0f;
+	m_pSceneManager = SceneManager::GetInstance();
 }
 
 Engine::~Engine()
@@ -10,14 +11,14 @@ Engine::~Engine()
 
 }
 
-void Engine::Update()
+void Engine::Update(float deltaTime)
 {
-
+	m_pSceneManager->Update(deltaTime);
 }
 
 void Engine::Draw()
 {
-	
+	m_pSceneManager->Draw();
 			number+=0.01f;
 			if(number>1.0f)
 				number = 0.0f;

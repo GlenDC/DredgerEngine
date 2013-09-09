@@ -113,7 +113,7 @@ Window::Window(HINSTANCE instance,const char* windowName,int width,int height)
 			
 		
 		}
-		engine->Update();
+		engine->Update(0.0f);
 		engine->Draw();
 		SwapBuffers(Window::hdc); // Swaps display buffers
 	}

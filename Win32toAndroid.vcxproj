@@ -78,6 +78,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="code\graphics\BaseScene.cpp" />
+    <ClCompile Include="code\graphics\SceneManager.cpp" />
     <ClCompile Include="code\input\ParameterClass.cpp" />
     <ClCompile Include="code\input\XMLConverter.cpp" />
     <ClCompile Include="code\input\XMLParser.cpp" />
@@ -92,6 +94,8 @@
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="code\graphics\BaseScene.h" />
+    <ClInclude Include="code\graphics\SceneManager.h" />
     <ClInclude Include="code\input\ParameterClass.h" />
     <ClInclude Include="code\input\XMLConverter.h" />
     <ClInclude Include="code\input\XMLParser.h" />
