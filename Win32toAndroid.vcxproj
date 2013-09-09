@@ -78,12 +78,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="code\input\ParameterClass.cpp" />
+    <ClCompile Include="code\input\XMLConverter.cpp" />
+    <ClCompile Include="code\input\XMLParser.cpp" />
+    <ClCompile Include="code\lib\HashIdentifier.cpp" />
+    <ClCompile Include="code\lib\Helpers.cpp" />
+    <ClCompile Include="code\lib\stdafx.cpp" />
+    <ClCompile Include="code\lib\Stopwatch.cpp" />
+    <ClCompile Include="code\lib\Timer.cpp" />
     <ClCompile Include="jni\Engine.cpp" />
     <ClCompile Include="OpenGL.cpp" />
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="code\input\ParameterClass.h" />
+    <ClInclude Include="code\input\XMLConverter.h" />
+    <ClInclude Include="code\input\XMLParser.h" />
+    <ClInclude Include="code\lib\GeneralStructs.h" />
+    <ClInclude Include="code\lib\HashIdentifier.h" />
+    <ClInclude Include="code\lib\Helpers.h" />
+    <ClInclude Include="code\lib\State.h" />
+    <ClInclude Include="code\lib\stdafx.h" />
+    <ClInclude Include="code\lib\Stopwatch.h" />
+    <ClInclude Include="code\lib\Timer.h" />
     <ClInclude Include="Console.h" />
     <ClInclude Include="jni\Engine.h" />
     <ClInclude Include="Win32toAndroid.h" />
